@@ -31,31 +31,31 @@ void usart_send_char(unsigned char data) {
 
 /* Reads a line of characters with a max buffer size. */
 char* usart_read(void) {
-  int data_size = 40;
-  // Allocate buffer memory
-  char * data = malloc(data_size * sizeof(char));
-  // Clean buffer memory before using it
-  memset(data, '0', data_size * sizeof(char));
-  
-  int i = 0;
-  while(1) {
-    data[i] = usart_read_char();
-    // A new line is the end of user input.
-    if (data[i] == '\n') {
-      break;
+    int data_size = 40;
+    // Allocate buffer memory
+    char * data = malloc(data_size * sizeof(char));
+    // Clean buffer memory before using it
+    memset(data, '0', data_size * sizeof(char));
+    
+    int i = 0;
+    while(1) {
+        data[i] = usart_read_char();
+        // A new line is the end of user input.
+        if (data[i] == '\n') {
+            break;
+        }
+        i++;
     }
-    i++;
-  }
-  // adding null terminator for end of string
-  data[i] = 0; // ascii code for '\0' 
-  return data;
+    // adding null terminator for end of string
+    data[i] = 0; // ascii code for '\0' 
+    return data;
 }
 
 /* Print character array until null terminator */
 void usart_print(char * data) {
-  for (int i = 0; data[i] != '\0'; i++) {
-    usart_send_char(data[i]);
-  }
+    for (int i = 0; data[i] != '\0'; i++) {
+        usart_send_char(data[i]);
+    }
 }
 
 /* Same as usart_print but adds a newline */
