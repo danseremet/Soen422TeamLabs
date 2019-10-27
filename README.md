@@ -4,7 +4,7 @@ Concordia Soen 422 Team Labs
 ## Authors
 - Dan Seremet
 - Alexandre Therrien
--
+- Julien Comtois
 - 
 
 ## Lab Report Example
