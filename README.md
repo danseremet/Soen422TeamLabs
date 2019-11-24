@@ -1,4 +1,4 @@
-# Soen422
+# Soen 422 Labs
 Concordia Soen 422 Team Labs
 
 ## Authors
@@ -7,5 +7,7 @@ Concordia Soen 422 Team Labs
 - Julien Comtois
 - Michael McMahon
 
-## Lab Report Example
-In the PDF file that you will see in the same directory as this readme is a PDF file that follows the guidelines the teacher wants. Refer to it to build the lab report the way the teacher wants it to be.
+## Lab 3
+- See LAB3
+## Project
+- See CARPROJECTSOEN422

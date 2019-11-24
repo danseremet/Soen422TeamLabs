@@ -1,0 +1,29 @@
+#!/bin/bash
+
+echo "Compiling..."
+
+
+
+echo "Compiling SpiWrite.c"
+gcc SpiWrite.c -o SpiWrite
+if [ $? -ne 0 ]
+then
+    echo "Compiling SpiWrite.c failed!"
+    exit 1
+fi
+echo "Done compiling SpiWrite.c!"
+
+
+echo "Compiling server.cpp"
+g++ server.cpp -o server
+if [ $? -ne 0 ]
+then
+    echo "Compiling server.cpp failed!"
+    exit 1
+fi
+echo "Done compiling server.c!"
+
+echo "Compile finished!"
+
+
+

@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+echo "Using config-pin to setup SPI master"
+
+echo "Setting SPI0..."
+echo "P9_17 as 0 spi_cs"
+echo "P9_18 as 0 spi (d1 mosi)"
+echo "P9_20 as 0 spi (d0 miso)"
+echo "P9_21 as 0 spi_sclk"
+config-pin P9_17 spi_cs
+config-pin P9_18 spi
+config-pin P9_21 spi
+config-pin P9_22 spi_sclk
+echo "SPI0 enabled!"
+
+
+echo "Setting SPI1..."
+echo "P9_28 as 1 spi_cs"
+echo "P9_29 as 1 spi (d0 miso)"
+echo "P9_30 as 1 spi (d1 mosi)"
+echo "P9_31 as 1 spi_sclk"
+config-pin P9_28 spi_cs
+config-pin P9_29 spi
+config-pin P9_30 spi
+config-pin P9_31 spi_sclk
+echo "SPI1 enabled!"
+
+echo "SPI enabled!"

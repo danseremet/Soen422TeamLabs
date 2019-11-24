@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+connmanctl agent on
+
+connmanctl scan wifi
+
+sleep 10s
+
+connmanctl connect wifi_000272aa13dc_64732d6465762d6c6170746f70_managed_psk
+
+sleep 25s
