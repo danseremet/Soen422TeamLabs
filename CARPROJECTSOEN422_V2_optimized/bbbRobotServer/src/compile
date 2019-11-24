@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "Compiling..."
+
+echo "Compiling server.cpp"
+g++ server.cpp -o server
+if [ $? -ne 0 ]
+then
+    echo "Compiling server.cpp failed!"
+    exit 1
+fi
+echo "Done compiling server.cpp!"
+
+echo "Compile finished!"
+
+
+

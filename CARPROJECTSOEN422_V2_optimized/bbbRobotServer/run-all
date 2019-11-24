@@ -1,0 +1,12 @@
+#!/bin/bash
+
+./config/config-pin-gpio-to-spi
+sleep 1s
+
+./config/wifi-setup
+sleep 1s
+
+./src/compile
+sleep 1s
+
+./src/server
